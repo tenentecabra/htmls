@@ -1,0 +1,82 @@
+/*
+    tamanho: altura | largura
+    exibicao: display: block (toda linha um abaixo do outro, 
+                              permite tamanho)
+              display: inline (um ao lado do outro, 
+                               ajuste ao conteudo, 
+                               nao permite tamanho)
+              display: inline-block (um ao lado do outro e permite tamanho)                 
+              display: none (nao aparece na tela)
+    posicionamento|alinhamento: text-align - line-heigth - float: left - position
+    espacamento: margin - padding          
+
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    height: 160px;
+    background-color: orangered;
+}
+
+section {
+    background-color: rgb(252, 252, 252);
+    width: 100%;
+    height: calc(100vh - 160px);
+}
+
+article, div  {
+   float: left;
+    width: 50%;
+    height: inherit;
+padding: 12px;
+}
+
+p {
+    font-size: 16px;
+font-weight: bold;
+font-style: italic;
+text-transform: lowercase;
+text-decoration: underline;
+font-family: arial, helvetica, sans-serif;
+letter-spacing:1px ;
+word-spacing: 2px;
+line-height: 1.5;
+text-align: justify;
+color: black;
+
+}
+
+ 
+nav ul li {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    display: inline-block;
+    height: 80px;
+    width: 120px;
+    text-align: center;
+    line-height: 80px;
+}
+nav ul{
+    list-style: none;
+    line-height: 160x;
+}
+section div img{
+    width:400px ;
+    height: 400px;
+    
+    border-radius: 50%;
+    
+}
+
+
+
+
+
+
+
+    
